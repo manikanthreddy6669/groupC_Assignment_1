@@ -19,6 +19,11 @@ func main() {
 	fmt.Println("Sum:", sum, "Difference:", difference)
 
 	fmt.Printf("\n%d! = %d\n", 5, factorial(5))
+
+	//Calculate square of numbers
+	Sq(2)
+	Sq(9)
+	Sq(13)
 }
 
 //Display name,id
@@ -81,4 +86,10 @@ func factorial(n int) int {
 		return 1
 	}
 	return n * factorial(n-1)
+}
+
+//Calculate square of numbers
+func Sq(num int) {
+	square := num * num
+	fmt.Printf("Square of %d is %d\n", num, square)
 }
