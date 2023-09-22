@@ -17,6 +17,8 @@ func main() {
 
 	sum, difference := calculate(21, 13)
 	fmt.Println("Sum:", sum, "Difference:", difference)
+
+	fmt.Printf("\n%d! = %d\n", 5, factorial(5))
 }
 
 //Display name,id
@@ -72,4 +74,11 @@ func calculate(n1 int, n2 int) (int, int) {
 	sum := n1 + n2
 	difference := n1 - n2
 	return sum, difference
+}
+
+func factorial(n int) int {
+	if n <= 1 {
+		return 1
+	}
+	return n * factorial(n-1)
 }
