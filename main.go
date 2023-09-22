@@ -14,6 +14,9 @@ func main() {
 	}
 
 	Celsius()
+
+	sum, difference := calculate(21, 13)
+	fmt.Println("Sum:", sum, "Difference:", difference)
 }
 
 //Display name,id
@@ -55,11 +58,18 @@ func isPrime(number int) bool {
 func Celsius() {
 	display("Shashank", 500224639)
 
-    var ftemp float64=0
-    var ctemp float64=0
-    
-    fmt.Printf("Enter temperature in Celsius: ");
-    fmt.Scanf("%f",&ctemp);
-    ftemp= (ctemp*1.8)+32;
-    fmt.Printf("Temperature in Fahrenheit: %.2f",ftemp);
+	var ftemp float64 = 0
+	var ctemp float64 = 0
+
+	fmt.Printf("Enter temperature in Celsius: ")
+	fmt.Scanf("%f", &ctemp)
+	ftemp = (ctemp * 1.8) + 32
+	fmt.Println("Temperature in Fahrenheit: %.2f", ftemp)
+}
+
+func calculate(n1 int, n2 int) (int, int) {
+	display("Nishith", 500223382)
+	sum := n1 + n2
+	difference := n1 - n2
+	return sum, difference
 }
