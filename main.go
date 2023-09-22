@@ -12,6 +12,8 @@ func main() {
 	} else {
 		fmt.Println("given number is not prime")
 	}
+
+	Celsius()
 }
 
 //Display name,id
@@ -48,4 +50,16 @@ func isPrime(number int) bool {
 	}
 
 	return true
+}
+
+func Celsius() {
+	display("Shashank", 500224639)
+
+    var ftemp float64=0
+    var ctemp float64=0
+    
+    fmt.Printf("Enter temperature in Celsius: ");
+    fmt.Scanf("%f",&ctemp);
+    ftemp= (ctemp*1.8)+32;
+    fmt.Printf("Temperature in Fahrenheit: %.2f",ftemp);
 }
